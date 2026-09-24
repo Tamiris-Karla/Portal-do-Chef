@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Portal do Chef - Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Portal do Chef</h1>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="lista.html">Lista de Compras</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="contato.html">Contato</a>
+            <a href="login.html" class="ativo">Login</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Login</h2>
+
+        <div class="card">
+            <!-- Ao clicar em Entrar, o formulário leva direto para a página dashboard.html -->
+            <form class="form-login" action="dashboard.html" method="get">
+
+                <label for="usuario">Usuário</label>
+                <input type="text" id="usuario" name="usuario" placeholder="Digite seu usuário">
+
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" name="senha" placeholder="Digite sua senha">
+
+                <button type="submit">Entrar</button>
+
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        Portal do Chef - Loja para os Chefs de Cozinha da ETE Porto Digital.
+    </footer>
+
+</body>
+</html>

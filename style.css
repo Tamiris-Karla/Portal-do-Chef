@@ -1,0 +1,193 @@
+/* ===== Estilo geral do site Portal do Chef ===== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fdf6ee;
+    color: #3b2a1f;
+}
+
+/* ===== Cabeçalho e menu de navegação ===== */
+
+header {
+    background-color: #d9662b;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+nav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    margin: 4px;
+    padding: 8px 14px;
+    border: 1px solid white;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    background-color: white;
+    color: #d9662b;
+}
+
+nav a.ativo {
+    background-color: white;
+    color: #a94a1a;
+    font-weight: bold;
+}
+
+/* ===== Conteúdo principal ===== */
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    color: #a94a1a;
+    border-bottom: 2px solid #e6d8c8;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #e6d8c8;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* ===== Página Início ===== */
+
+.perfil {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.foto-cliente {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #d9662b;
+}
+
+.dados-cliente p {
+    margin: 4px 0;
+}
+
+/* ===== Página Produtos ===== */
+
+.grid-produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 15px;
+}
+
+.produto {
+    background-color: white;
+    border: 1px solid #e6d8c8;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+}
+
+.produto-img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.produto .preco {
+    color: #a94a1a;
+    font-weight: bold;
+    display: block;
+    margin: 8px 0;
+}
+
+.produto select {
+    padding: 5px;
+    margin-bottom: 8px;
+}
+
+.produto button {
+    background-color: #d9662b;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.produto button:hover {
+    background-color: #a94a1a;
+}
+
+/* ===== Página Lista de Compras ===== */
+
+.submenu {
+    margin-bottom: 20px;
+}
+
+.submenu a {
+    color: #a94a1a;
+    text-decoration: none;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+.submenu a:hover {
+    text-decoration: underline;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #e6d8c8;
+}
+
+.total {
+    text-align: right;
+    font-size: 18px;
+    font-weight: bold;
+    color: #a94a1a;
+    margin-top: 15px;
+}
+
+/* ===== Página Contato ===== */
+
+.contato-item {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+/* ===== Rodapé ===== */
+
+footer {
+    text-align: center;
+    padding: 15px;
+    color: #7a6a5a;
+    font-size: 13px;
+}
